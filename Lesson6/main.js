@@ -4,21 +4,16 @@
 
 
 // fetch('https://jsonplaceholder.typicode.com/posts')
-//     .then((response) => {return response.json()})
+//     .then((response) => {return response.json(); })
 //     .then((posts) => {
-//
 //         let postsBox = document.getElementsByClassName('posts-box') [0];
 //         for (const post of posts) {
-//             console.log(post);
 //             let pPost = document.createElement('p');
-//             pPost.innerText = ${post.id} - ${post.title};
+//             pPost.innerText = `${post.id} - ${post.title} `;
 //             postsBox.append(pPost);
 //         }
 //
 //     });
-fetch('https://jsonplaceholder.typicode.com/posts')
-    .then((response) => {return response.json(); })
-    .then((value) => {console.log(value);});
 
 // 2.
 // Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті
@@ -32,7 +27,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 //             for (const comment of comments) {
 //                 console.log(comment);
 //                 let pComment = document.createElement('p');
-//                 pComment.innerText = ${comment.id} - ${comment.name};
+//                 pComment.innerText = `${comment.id} - ${comment.name}`;
 //                 commentBox.append(pComment);
 //             }
 //         });
