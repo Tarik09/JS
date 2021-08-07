@@ -69,7 +69,15 @@ h1 {
 }
 .button-detail button {
     width: 90%;
-    margin: 5px;
+    height: 40px;
+    margin: 30px;
+    background: #f8f6be;
+    border: 1px solid #254107;
+    cursor: pointer;
+    color: black;
+    padding: 5px;
+    margin-left: 65px;
+
 
 }
 .posts-box li {
