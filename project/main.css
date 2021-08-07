@@ -1,0 +1,126 @@
+h1 {
+    text-align: center;
+}
+#users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#users div {
+    width: 40%;
+    text-align: center;
+    border: 1px solid silver;
+    padding: 20px;
+    margin: 5px 15px;
+    background: silver;
+}
+.users-box a {
+    display: block;
+    margin: 10px auto 0;
+    width: 200px;
+    background: #4d7221;
+    border: 1px solid #254107;
+    cursor: pointer;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+}
+.users-box a:hover {
+    background: #6aab1b;
+}
+.users-box a:focus {
+    background: #f1cb0e;
+}
+.id {
+    background: silver;
+    width: 500px;
+    margin-left: 400px;
+    padding: 10px
+}
+.address {
+    background: silver;
+    width: 500px;
+    margin-left: 400px;
+    padding: 10px
+}
+.info {
+    text-align: center;
+    background: blanchedalmond;
+    width: 520px;
+    margin-left: 400px;
+}
+.phone {
+    background: silver;
+    width: 500px;
+    margin-left: 400px;
+    padding: 10px
+}
+.geo {
+    background: silver;
+    width: 500px;
+    margin-left: 400px;
+    padding: 10px
+}
+.company {
+    background: silver;
+    width: 500px;
+    margin-left: 400px;
+    padding: 10px
+}
+.button-detail button {
+    width: 90%;
+    margin: 5px;
+
+}
+.posts-box li {
+    width: 15%;
+    border: 1px solid silver;
+    padding: 20px;
+    margin: 15px 10px;
+    background: #7da4f6;
+}
+.posts-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
