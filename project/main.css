@@ -24,6 +24,7 @@ h1 {
     color: black;
     padding: 5px;
     text-decoration: none;
+    border-radius: 5px;
 }
 .users-box a:hover {
     background: #6aab1b;
@@ -31,41 +32,38 @@ h1 {
 .users-box a:focus {
     background: #f1cb0e;
 }
+.infoDetail {
+    margin: 0 auto;
+    max-width: 500px;
+
+}
 .id {
     background: silver;
-    width: 500px;
-    margin-left: 400px;
     padding: 10px
 }
 .address {
     background: silver;
-    width: 500px;
-    margin-left: 400px;
     padding: 10px
 }
 .info {
     text-align: center;
     background: blanchedalmond;
-    width: 520px;
-    margin-left: 400px;
+    padding: 5px 10px;
 }
 .phone {
     background: silver;
-    width: 500px;
-    margin-left: 400px;
     padding: 10px
 }
 .geo {
     background: silver;
-    width: 500px;
-    margin-left: 400px;
     padding: 10px
 }
 .company {
     background: silver;
-    width: 500px;
-    margin-left: 400px;
     padding: 10px
+}
+.button-detail {
+    text-align: center;
 }
 .button-detail button {
     width: 90%;
@@ -76,23 +74,66 @@ h1 {
     cursor: pointer;
     color: black;
     padding: 5px;
-    margin-left: 65px;
-
-
+    border-radius: 10px;
 }
+
 .posts-box li {
     width: 15%;
     border: 1px solid silver;
     padding: 20px;
     margin: 15px 10px;
-    background: #7da4f6;
+    background: #b6d0f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
 }
 .posts-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+.posts-box a {
+    display: block;
+    background: #abf3b0;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    margin: 10px auto 0;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid #254107;
+    cursor: pointer;
+    color: black;
+}
+.posts-box a:hover {
+    background: #6aab1b;
+}
+.posts-box a:focus {
+    background: #f1cb0e;
+}
+.post-detail {
+    background: silver;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+.comments-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
+}
+.comments-box p {
+    width: 20%;
+    background: #b6d0f8;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.4;
+}
 
 
 

@@ -13,7 +13,6 @@
 <h1>USER-DETAILS</h1>
 
 <div class="details-box"></div>
-
 <div class="button-detail"></div>
 <div class="posts-box"></div>
 
@@ -23,41 +22,41 @@
     const user = JSON.parse(JOSINUser);
     document.getElementsByClassName("details-box")[0].innerHTML =`
 
-    <div class="id">
+    <div class="id infoDetail">
         id: ${user.id}<br/>
         name: ${user.name}<br/>
         username: ${user.username}<br/>
         email: ${user.email}<br/>
     </div>
-    <div class="info">
+    <div class="info infoDetail">
         address:
      </div>
-    <div class="address">
+    <div class="address infoDetail">
         street: ${user.address.street}<br/>
         suite: ${user.address.suite}<br/>
         city: ${user.address.city}<br/>
         zipcode: ${user.address.zipcode}<br/>
     </div>
 
-    <div class="info">
+    <div class="info infoDetail">
             geo:
     </div>
 
-    <div class="geo">
+    <div class="geo infoDetail">
             lat: ${user.address.geo.lat}<br/>
             lng: ${user.address.geo.lng}<br/>
     </div>
 
-    <div class="phone">
+    <div class="phone infoDetail">
     phone: ${user.phone}<br/>
-    website: ${user.websaite}<br/>
+    website: ${user.website}<br/>
     </div>
 
-    <div class="info">
+    <div class="info infoDetail">
         company:
     </div>
 
-    <div class="company">
+    <div class="company infoDetail">
         name: ${user.company.name}<br/>
         catchPhrase: ${user.company.catchPhrase}<br/>
         bs: ${user.company.bs}<br/>
@@ -68,12 +67,10 @@
 
 
 <script>
-
     let buttonDiv = document.getElementsByClassName('button-detail') [0];
 
     let detalisBtn = document.createElement('button');
     detalisBtn.innerText = 'post of current user';
-    console.log('button created');
     buttonDiv.append(detalisBtn);
 
     detalisBtn.onclick = function () {
@@ -92,11 +89,13 @@
                     let liPost = document.createElement('li');
                     liPost.innerText = `${post.title}`;
 
-                    let buttonDetail = document.createElement('button');
-                    buttonDetail.innerText = `post`;
-                    console.log('button Created');
-                    liPost.append(buttonDetail);
+                    let buttonDetail = document.createElement('a');
+                    buttonDetail.innerText = 'post';
 
+                    buttonDetail.href = `post-details.html?post=${JSON.stringify(post)}`;
+
+
+                    liPost.append(buttonDetail);
                     postsBox.append(liPost);
 
                 }
@@ -105,15 +104,7 @@
 
     }
 
-
-
-
-
-
-
 </script>
-
-
 
 </body>
 </html>
